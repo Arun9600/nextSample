@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+.sectionSpacing {
+  padding: 60px 0;
+}
+.navbar a {
+  text-decoration: none;
+}
+
+.navbar a span {
+  padding-left: 10px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.headerButton {
+  padding: 8px 10px;
+  background-color: #000;
+  border-radius: 18px;
+  border: 2px solid #000;
+  transition: 0.3ms;
+  color: #fff;
+  margin: 0 10px;
+}
+
+.headerButton:hover {
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+}
