@@ -3,6 +3,7 @@ import "../globals.css";
 import "bootstrap/dist/css/bootstrap.css";
 import BootstrapJs from "@/components/BootstrapJs";
 import Header from "@/components/Header";
+import Provider from "@/components/Provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -14,11 +15,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className="main">
-          <Header />
-          {children}
-        </div>
-        <BootstrapJs />
+        <Provider>
+          <div className="main">
+            <Header />
+            {children}
+          </div>
+          <BootstrapJs />
+        </Provider>
       </body>
     </html>
   );
